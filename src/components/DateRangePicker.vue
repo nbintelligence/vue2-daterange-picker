@@ -194,7 +194,8 @@ export default {
       })
     },
     clickedRange(range){
-      console.log(range);
+      this.start = range.start()
+      this.end = range.end()
     },
     clickAway() {
       if (this.open) {
